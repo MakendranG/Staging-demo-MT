@@ -1,0 +1,135 @@
+Running from: /root/jenkins.war
+webroot: $user.home/.jenkins
+2021-11-29 07:59:05.298+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @1540ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-11-29 07:59:05.665+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-11-29 07:59:05.807+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-11-29 07:59:05.891+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10
+2021-11-29 07:59:09.603+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-11-29 07:59:09.976+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-11-29 07:59:09.976+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-11-29 07:59:09.983+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+2021-11-29 07:59:11.784+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /root/.jenkins found at: $user.home/.jenkins
+2021-11-29 07:59:12.318+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@5f9edf14{Jenkins v2.249.2,/,file:///root/.jenkins/war/,AVAILABLE}{/root/.jenkins/war}
+2021-11-29 07:59:12.374+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@69d9c55{HTTP/1.1, (http/1.1)}{0.0.0.0:9090}
+2021-11-29 07:59:12.374+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @8617ms
+2021-11-29 07:59:12.382+0000 [id=20]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-11-29 07:59:15.480+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-11-29 07:59:26.383+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-11-29 07:59:38.020+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-11-29 07:59:38.052+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-11-29 07:59:41.749+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-11-29 07:59:41.857+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-11-29 07:59:42.147+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-11-29 07:59:42.175+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-11-29 07:59:42.178+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-11-29 07:59:42.347+0000 [id=42]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-11-29 07:59:42.459+0000 [id=42]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2021-11-29 07:59:43.417+0000 [id=26]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@4966606b: display name [Root WebApplicationContext]; startup date [Mon Nov 29 07:59:43 UTC 2021]; root of context hierarchy
+2021-11-29 07:59:43.417+0000 [id=26]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@4966606b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5429c975
+2021-11-29 07:59:43.442+0000 [id=26]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5429c975: defining beans [authenticationManager]; root of factory hierarchy
+2021-11-29 07:59:43.806+0000 [id=26]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@27cc65f7: display name [Root WebApplicationContext]; startup date [Mon Nov 29 07:59:43 UTC 2021]; root of context hierarchy
+2021-11-29 07:59:43.806+0000 [id=26]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@27cc65f7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5dcc3725
+2021-11-29 07:59:43.808+0000 [id=26]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5dcc3725: defining beans [filter,legacy]; root of factory hierarchy
+2021-11-29 07:59:43.933+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-11-29 07:59:44.042+0000 [id=19]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+2021-11-29 07:59:50.884+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+2021-11-29 07:59:50.994+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+2021-11-29 07:59:51.036+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+2021-11-29 07:59:51.088+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.sonar.MsBuildSonarQubeRunnerInstaller
+2021-11-29 07:59:51.125+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.sonar.SonarRunnerInstaller
+2021-11-29 07:59:51.516+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tools.JDKInstaller
+2021-11-29 07:59:51.517+0000 [id=42]	INFO	hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
+2021-11-29 07:59:51.520+0000 [id=42]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 9,172 ms
+2021-11-29 08:00:01.628+0000 [id=62]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in Petclinic Pipeline as a code. Triggering  #33
+2021-11-29 08:00:01.628+0000 [id=64]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in petclinic-pipeline. Triggering  #21
+2021-11-29 08:02:26.727+0000 [id=47]	INFO	o.j.p.workflow.job.WorkflowRun#finish: petclinic-pipeline #21 completed: SUCCESS
+2021-11-29 08:02:26.953+0000 [id=238]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Failed sending usage report to Artifactory: java.io.IOException: Could not get Artifactory version.
+2021-11-29 08:02:27.170+0000 [id=240]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://172.17.0.1/artifactory/petclinic-repo/petclinic.war
+2021-11-29 08:02:27.368+0000 [id=240]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: Failed to upload file
+2021-11-29 08:02:27.370+0000 [id=240]	SEVERE	o.j.h.util.JenkinsBuildInfoLog#error: [consumer_0] An exception occurred during execution:
+java.lang.RuntimeException: java.io.IOException: JFrog service failed. Received 405: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>405 Method Not Allowed</title>
+</head><body>
+<h1>Method Not Allowed</h1>
+<p>The requested method PUT is not allowed for this URL.</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at 172.17.0.1 Port 80</address>
+</body></html>
+
+	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:44)
+	at org.jfrog.build.extractor.producerConsumer.ConsumerRunnableBase.run(ConsumerRunnableBase.java:11)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: JFrog service failed. Received 405: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>405 Method Not Allowed</title>
+</head><body>
+<h1>Method Not Allowed</h1>
+<p>The requested method PUT is not allowed for this URL.</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at 172.17.0.1 Port 80</address>
+</body></html>
+
+	at org.jfrog.build.extractor.clientConfiguration.client.JFrogService.throwException(JFrogService.java:53)
+	at org.jfrog.build.extractor.clientConfiguration.client.artifactory.services.Upload.handleUnsuccessfulResponse(Upload.java:59)
+	at org.jfrog.build.extractor.clientConfiguration.client.JFrogService.execute(JFrogService.java:130)
+	at org.jfrog.build.extractor.clientConfiguration.client.artifactory.services.Upload.execute(Upload.java:77)
+	at org.jfrog.build.extractor.clientConfiguration.client.artifactory.ArtifactoryManager.upload(ArtifactoryManager.java:262)
+	at org.jfrog.build.extractor.clientConfiguration.client.artifactory.ArtifactoryManager.upload(ArtifactoryManager.java:257)
+	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:39)
+	... 2 more
+
+2021-11-29 08:02:27.828+0000 [id=47]	INFO	o.j.p.workflow.job.WorkflowRun#finish: Petclinic Pipeline as a code #33 completed: FAILURE
+2021-11-29 08:02:28.066+0000 [id=47]	WARNING	h.p.s.client.SQProjectResolver#resolve: Error fetching project information
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.squareup.okhttp.internal.Platform.connectSocket(Platform.java:101)
+	at com.squareup.okhttp.Connection.connectSocket(Connection.java:198)
+	at com.squareup.okhttp.Connection.connect(Connection.java:172)
+	at com.squareup.okhttp.Connection.connectAndSetOwner(Connection.java:358)
+	at com.squareup.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:117)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:329)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:246)
+	at com.squareup.okhttp.Call.getResponse(Call.java:276)
+	at com.squareup.okhttp.Call$ApplicationInterceptorChain.proceed(Call.java:234)
+	at com.squareup.okhttp.Call.getResponseWithInterceptorChain(Call.java:196)
+	at com.squareup.okhttp.Call.execute(Call.java:79)
+	at org.sonarqube.ws.client.HttpConnector.doCall(HttpConnector.java:209)
+Caused: java.lang.IllegalStateException: Fail to request http://localhost:9000/api/server/version
+	at org.sonarqube.ws.client.HttpConnector.doCall(HttpConnector.java:212)
+	at org.sonarqube.ws.client.HttpConnector.get(HttpConnector.java:154)
+	at org.sonarqube.ws.client.HttpConnector.call(HttpConnector.java:143)
+	at hudson.plugins.sonar.client.HttpClient.getHttp(HttpClient.java:37)
+	at hudson.plugins.sonar.client.WsClient.getServerVersion(WsClient.java:82)
+	at hudson.plugins.sonar.client.SQProjectResolver.resolve(SQProjectResolver.java:60)
+	at hudson.plugins.sonar.action.SonarCacheAction.get(SonarCacheAction.java:76)
+	at hudson.plugins.sonar.action.SonarCacheAction.get(SonarCacheAction.java:51)
+	at hudson.plugins.sonar.action.SonarProjectActionFactory.createProjectPage(SonarProjectActionFactory.java:118)
+	at hudson.plugins.sonar.action.SonarProjectActionFactory.createFor(SonarProjectActionFactory.java:83)
+	at hudson.plugins.sonar.action.SonarProjectActionFactory.createFor(SonarProjectActionFactory.java:42)
+	at hudson.model.Actionable.createFor(Actionable.java:114)
+	at hudson.model.Actionable.getActions(Actionable.java:139)
+	at hudson.model.Job.getPermalinks(Job.java:1068)
+	at jenkins.model.PeepholePermalink$RunListenerImpl.onCompleted(PeepholePermalink.java:223)
+	at hudson.model.listeners.RunListener.fireCompleted(RunListener.java:209)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.finish(WorkflowRun.java:625)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.access$800(WorkflowRun.java:138)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun$GraphL.onNewHead(WorkflowRun.java:1045)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.notifyListeners(CpsFlowExecution.java:1473)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$3.run(CpsThreadGroup.java:491)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:136)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-29 08:54:30.946+0000 [id=340]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-29 08:54:30.948+0000 [id=340]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 0 ms

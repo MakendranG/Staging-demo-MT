@@ -1,0 +1,1000 @@
+  277  ls
+  278  cd devops-mindtree-25-Nov-2021/
+  279  git branch
+  280  ls
+  281  cd 04-Docker/
+  282  ls
+  283  cd 00-Setup/
+  284  ls
+  285  ./install-docker.sh 
+  286  docker -version
+  287  docker image
+  288  docker images
+  289  docker version
+  290  docker run busybox echo "Hello World"
+  291  docker ps
+  292  docker ps -a
+  293  cd
+  294  cd new/devops-mindtree-25-Nov-2021/04-Docker/
+  295  mkidr dockerfile/apache -p
+  296  mkdir dockerfile/apache -p
+  297  cd dockerfile/
+  298  cd apache/
+  299  ls
+  300  vim dockerfile
+  301  history
+  302  history | grep -i nohup
+  303  nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+  304  ls
+  305  cd devops-mindtree-25-Nov-2021/
+  306  ls
+  307  cd -
+  308  cd new/
+  309  ls
+  310  cd devops-mindtree-25-Nov-2021/
+  311  ls
+  312  cd 04-Docker/
+  313  ls
+  314  cd dockerfile/
+  315  cd apache/
+  316  ls
+  317  vim dockerfile
+  318  cat dockerfile 
+  319  vim index.html
+  320  docker build -t testwebserver:v1 .
+  321  ls
+  322  cat dockerfile 
+  323  ls
+  324  docker build -t testwebserver:v1
+  325  docker build -t testwebserver:v1 .
+  326  docker build -t testwebserver:v1.
+  327  docker build -t testwebserver1:v1 .
+  328  cat dockerfile 
+  329  ls
+  330  vi dockerfile 
+  331  docker build -t testwebserver:v1 .
+  332  docker images
+  333  docker ps
+  334  docker ps- a
+  335  docker ps -a
+  336  docker run -d --name test-web-2 testwebserver:v1
+  337  docker ps
+  338  ipaddr
+  339  ip addr
+  340  curl 172.17.0.0:8080
+  341  docker inspect <html>
+  342  <h1> Welcome to the world of Docker.! </h1>
+  343  docker inspect test-web-2 
+  344  curl 172.17.0.2
+  345  cd
+  346  cd new/devops-mindtree-25-Nov-2021/04-Docker/dockerfile/
+  347  mkdir tomcat
+  348  vim dockerfile
+  349  ls
+  350  cat dockerfile 
+  351  ls
+  352  cd tomcat/
+  353  cd ..
+  354  cp -rf dockerfile tomcat/
+  355  cd tomcat/
+  356  ls
+  357  cat dockerfile 
+  358  cp -rf /root/.jenkins/workspace/petclinic-pipeline/03-App-Code/petclinic-code/target/petclinic.war .
+  359  ls
+  360  vim dockerfile 
+  361  du -sh *
+  362  docker build -t tomcat:v1
+  363  docker build -t tomcat:v1 .
+  364  docker images
+  365  docker run -d --name test-tomcat-1 -P tomcat:v1
+  366  docker ps
+  367  docker inspect test-tomcat-1 
+  368  ip addr
+  369  cd ..
+  370  cd .
+  371  cd ..
+  372  df -h
+  373  git clone https://github.com/amitvashisttech/devops-mindtree-25-Nov-2021.git
+  374  mkdir new1
+  375  cd new1
+  376  git clone https://github.com/amitvashisttech/devops-mindtree-25-Nov-2021.git
+  377  cd devops-mindtree-25-Nov-2021/
+  378  cd 05-DockerCompose/
+  379  ls
+  380  cd 00-Setup/
+  381  ls
+  382  ./dockercompose-install.sh 
+  383  docker-compose -version
+  384  vim 01-nginx
+  385  mkdir 01-nginx
+  386  cd 01-nginx/
+  387  vim dockerfile
+  388  vim dockerfile.yaml
+  389  ls
+  390  cat dockerfile.yaml 
+  391  ls
+  392  docker-compose up -d
+  393  ls
+  394  vim docker-compose.yaml
+  395  docker-compose up -d
+  396  docker ps
+  397  docker-compose stop
+  398  docker ps
+  399  docker kill
+  400  docker kill {docker ps -a}
+  401  docker kill (docker ps -a)
+  402  docker kill test-web-2
+  403  docker kill test-tomcat-1 
+  404  cd
+  405  cd -
+  406  cd .
+  407  cd ..
+  408  mkdir 02-multi-app
+  409  cd 02-multi-app/
+  410  vim docker-compose.yaml
+  411  docker images
+  412  vim docker-compose.yaml 
+  413  docker ps
+  414  docker ps -d
+  415  docker ps -a
+  416  ls
+  417  docker-compose ps
+  418  docker-compose ps -d
+  419  docker ps
+  420  history
+  421  docker-compose up -d
+  422  docker-compose ps
+  423  cd ..
+  424  mkdir 03-petclinic-deploy
+  425  cd 03-petclinic-deploy/
+  426  ls
+  427  vim docker-compose.yaml
+  428  ls
+  429  vim dockerfile
+  430  cd /root/.jenkins/workspace/Petclinic Pipeline as a code/
+  431  cd /root/.jenkins/workspace/petclinic-pipeline/03-App-Code/petclinic-code/target/petclinic.war .
+  432  ls
+  433  history
+  434  docker ps
+  435  cd .
+  436  cd ..
+  437  ls
+  438  cd 02-multi-app/
+  439  ls
+  440  cd ..
+  441  ls
+  442  cd 01-Nginx/
+  443  ls
+  444  cd ..
+  445  ls
+  446  cd 04-Docker/
+  447  ls
+  448  cd 01-Dockerfile/
+  449  ls
+  450  cd tomcat/
+  451  ls
+  452  du -sh *
+  453  cd 
+  454  cd /root/.jenkins/workspace/petclinic-pipeline/03-App-Code/
+  455  ls
+  456  cd petclinic-code
+  457  ls
+  458  cd target/
+  459  ls
+  460  pwd
+  461  cd -
+  462  cd 
+  463  cd new1/devops-mindtree-25-Nov-2021/
+  464  ls
+  465  cd 05-DockerCompose/
+  466  ls
+  467  cd 03-petclinic-deploy/
+  468  ls
+  469  cp -rf /root/.jenkins/workspace/petclinic-pipeline/03-App-Code/petclinic-code/target/petclinic.war .
+  470  ls
+  471  docker-compose up -build
+  472  docker-compose up -d --build
+  473  cat docker-compose.yaml 
+  474  cd ..
+  475  d ..
+  476  cd ..
+  477  cd 03-App-Code/
+  478  ls
+  479  cd petclinic-code/
+  480  ls
+  481  ls -ltr
+  482  vim dockerfile
+  483  docker ps
+  484  docker kill
+  485  docker kill 02-multi-app_myapache_1
+  486  docker kill 02-multi-app_tomcat_1
+  487  docker kill 02-multi-app_nginx_1
+  488  docker kill nginx:latest
+  489  docker ps
+  490  docker kill 03-petclinic-deploy_petclinic_1
+  491  docker ps
+  492  ate
+  493  date
+  494  docker ps
+  495  ps -ef
+  496  top
+  497  cd ..
+  498  cd 05-DockerCompose/
+  499  ls
+  500  mkdir 04-jfrog-artifactory
+  501  c d04
+  502  cd 04-jfrog-artifactory/
+  503  ls
+  504  vim docker-compose.yaml
+  505  docker-compose up -d
+  506  docker-compose ps
+  507  chmod 777 -R /data/artifactory
+  508  docker-compose kill
+  509  docker-compose up -d
+  510  docker ps
+  511  docker ps -a
+  512  docker ps
+  513  docker-compose ps
+  514  docker ps
+  515  docker logs fccf8406600b
+  516  docker logs fccf8406600b | grep -i db
+  517  docker logs fccf8406600b | grep -i peers
+  518  free -m
+  519  docker-compose kill
+  520  ls
+  521  vim docker-compose.yaml 
+  522  docker-compose ps
+  523  docker ps
+  524  docker-compose -up d
+  525  history
+  526  docker-compose up -d
+  527  docker ps
+  528  docker-compose ps
+  529  docker ps
+  530  docker logs 6f7f970e9104
+  531  docker-f logs 6f7f970e9104
+  532  docker logs -f 6f7f970e9104
+  533  ip addr
+  534  docker logs -f 6f7f970e9104
+  535  cd 
+  536  cd -
+  537  ls
+  538  vim dockerfil
+  539  ls
+  540  docker-compose kill
+  541  history | grep -i build
+  542  docker build -t jfrog:v1 .
+  543  ls
+  544  cp dockerfil dockerfile
+  545  ls
+  546  docker build -t jfrog:v1 .
+  547  docker-compose up -d
+  548  docker-compose ps
+  549  vim docker-compose.yaml 
+  550  docker-compose stop
+  551  docker-compose ps
+  552  docker-compose up -d
+  553  docker-compose ps
+  554  docker ps
+  555  docker-compose -f 81395512cfc8
+  556  docker logs -f 81395512cfc8
+  557  ls
+  558  rm -rf dockerfil
+  559  rm -rf dockerfile 
+  560  vim docker-compose.yaml
+  561  rm -rf /data/artifactory/
+  562  rm -rf dockerfile 
+  563  docker ps
+  564  docker-compose ps
+  565  ls
+  566  docker-compose stop
+  567  docker-compose kill
+  568  cat docker-compose.yaml 
+  569  docker-compose up -d
+  570  docker ps
+  571  docker-compose stop
+  572  chmod 777 -R /data/artifactory
+  573  docker-compose start
+  574  docker-compose ps
+  575  cd ..
+  576  mkdir 05-sonarqube
+  577  cd 05-sonarqube/
+  578  vim docker-compose.yaml
+  579  sysctl -w vm.max_map_count=262144
+  580  docker-compose up -d
+  581  docker-compose ps
+  582  docker ps
+  583  docker logs -f 81395512cfc8
+  584  docker ps
+  585  docker-compose ps
+  586  docker ps -a
+  587  docker logs -f 3101ada42060
+  588  docker-compose ps
+  589  docker-compose stop
+  590  docker-compose ps
+  591  docker-compose rm 
+  592  docker-compose ps
+  593  docker-compose ps -a
+  594  df -h
+  595  ls
+  596  vim docker-compose.yaml 
+  597  sysctl -w vm.max_map_count=262144
+  598  docker-compose up -d
+  599  docker-compose ps
+  600  free -m
+  601  docker images
+  602  history | grep -i nohup
+  603  nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+  604  docker ps
+  605  docker-compose ps
+  606  cd new1/
+  607  cd devops-mindtree-25-Nov-2021/
+  608  ls
+  609  cd 05-DockerCompose/
+  610  ls
+  611  cd 05-sonarqube/
+  612  ls
+  613  docker-composeps
+  614  docker-compose ps
+  615  docker-compose up -d
+  616  docker-compose ps
+  617  sysctl -w vm.max_map_count=262144
+  618  cat docker-compose.yaml 
+  619  sysctl -w vm.max_map_count=262144
+  620  cat docker-compose.yaml 
+  621  vim docker-compose.yaml 
+  622  docker-compose up -d
+  623  free -m
+  624  docker-compose ps
+  625  docker ps
+  626  docker-compose ps
+  627  free -m
+  628  docker-compose ps
+  629  docker ps -a
+  630  docker logs 3c595f49fdec
+  631  docker-compose up -d
+  632  docker-compose ps
+  633  cat docker-compose.yaml 
+  634  docker-compose stop
+  635  docker-compose rm
+  636  docker-compose up -d
+  637  docker-compose ps
+  638  docker ps -a
+  639  docker logs 79efd784fc06
+  640  docker-compose stop
+  641  docker-compose rm
+  642  docker-compose ps
+  643  docker volume ls
+  644  docker volume rm $(docker volume -ls q)
+  645  docker volume rm $(docker volume ls -q)
+  646  docker volume ls -1
+  647  docker volume ls -q
+  648  docker-compose up -d
+  649  docker-compose ps
+  650  cat docker-compose.yaml 
+  651  docker ps
+  652  cat docker-compose.yaml 
+  653  docker ps
+  654  apt-get install ansible -y
+  655  docker ps
+  656  docker stop 81395512cfc8
+  657  docker ps
+  658  ls
+  659  cd new
+  660  ls
+  661  ls -ltr
+  662  cd ..
+  663  df -h
+  664  docker ps
+  665  ls -ltr
+  666  mkdir 26112021
+  667  cd 26112021/
+  668  cd .
+  669  cd ..
+  670  rm -rf 26112021/
+  671  ls -ltr
+  672  ip addr
+  673  nslookup
+  674  ping 172.17.0.1
+  675  ping 172.20.0.1
+  676  cd new1/
+  677  cd mi
+  678  cd devops-mindtree-25-Nov-2021/
+  679  ls
+  680  mkdir 06-ansible
+  681  cd 06-ansible/
+  682  ls
+  683  mkdir 01-inventory
+  684  cd 01-inventory/
+  685  vim inventory
+  686  ls
+  687  vim inventory
+  688  ifconfig
+  689  vim inventory 
+  690  ifconfig
+  691  ping 10.0.04
+  692  ssh labuser@10.0.0.4
+  693  ansible all -i inventory -m ping -u labuser -k
+  694  apt-get install sshpass
+  695  ansible all -i inventory -m ping -u labuser -k
+  696  ansible 10.0.0.4 -i inventory -m ping -u labuser -k
+  697  vim inventory 
+  698  ansible prod -i inventory -m ping -u labuser -k
+  699  vim inventory 
+  700  ansible prod:nonprod -i inventory -m ping -u labuser -k
+  701  cat inventory 
+  702  ansible prod&nonprod -i inventory -m ping -u labuser -k
+  703  ansible prod:&nonprod -i inventory -m ping -u labuser -k
+  704  ansible 'prod:&nonprod' -i inventory -m ping -u labuser -k
+  705  vim inventory 
+  706  ansible stage -i inventory -m ping -u labuser -k
+  707  ansible 'prod:&nonprod:!python3' -i inventory -m ping -u labuser -k
+  708  ansible 'prod:&nonprod:python3' -i inventory -m ping -u labuser -k
+  709  vim inventory 
+  710  ansible env -i inventory -m ping -u labuser -k
+  711  vim inventory 
+  712  ansible env -i inventory -m ping -u labuser -k
+  713  vim inventory 
+  714  ansible env -i inventory -m ping -u labuser -k
+  715  vim inventory 
+  716  ansible env -i inventory -m ping -u labuser -k
+  717  vim inventory 
+  718  ansible env -i inventory -m ping
+  719  vim inventory 
+  720  ansible env -i inventory -m ping
+  721  ansible 'prod:&nonprod:python3' -i inventory -m ping
+  722  cd .
+  723  cd ..
+  724  mkdir 02-ansible-cfg
+  725  cd 02-ansible-cfg/
+  726  ls
+  727  vim ansible.cfg
+  728  cd ..
+  729  cd 01-inventory/
+  730  ls
+  731  cd ..
+  732  cd 02-ansible-cfg/
+  733  ls
+  734  cd ..
+  735  cp -rf 01-inventory/ 02-ansible-cfg/
+  736  cd 02-ansible-cfg/
+  737  ls
+  738  cd .
+  739  cd ..
+  740  cp -rf 01-inventory/inventory 02-ansible-cfg/
+  741  cd 02-ansible-cfg/
+  742  ls
+  743  rm -rf 01-inventory/
+  744  mv inventory hosts
+  745  ls
+  746  cat hosts
+  747  ansible web -m ping
+  748  ansible env -m ping
+  749  ansible -i web -m ping
+  750  history
+  751  ansible web -i hosts -m ping
+  752  ls
+  753  ansible web -i ./hosts -m ping
+  754  ansible env -m ping
+  755  ansible 'prod:&nonprod' -m ping
+  756  ansible 'prod' -m ping
+  757  la -ltr /var/log/ansible.log 
+  758  cat /var/log/ansible.log 
+  759  ansible-doc
+  760  ansible-doc -l
+  761  nsible-doc apt
+  762  ansideans
+  763  cd ..
+  764  free -m
+  765  top
+  766  reboot
+  767  cd new1/
+  768  ls
+  769  cd devops-mindtree-25-Nov-2021/
+  770  ls
+  771  cd 06-ansible/
+  772  ls
+  773  cd 02-ansible-cfg/
+  774  ls
+  775  ansible-doc apt
+  776  nsible 'web:&prod'  -m apt -a "name=ntp state=present"
+  777  free -m
+  778  ansansakapkdapkd
+  779  ansible
+  780  ansa
+  781  cd new1/
+  782  cd devops-mindtree-25-Nov-2021/
+  783  ls
+  784  cd 06-ansible/
+  785  ls
+  786  cd 02-ansible-cfg/
+  787  ls
+  788  ansible-doc apt
+  789  nsible 'web:&prod'  -m apt -a "name=ntp state=present"
+  790  free -m
+  791  ansible 
+  792  ls
+  793  ansible env -m ping
+  794  reboot
+  795  cd new1/devops-mindtree-25-Nov-2021/06-ansible/02-ansible-cfg/
+  796  ansible 'env'  -m apt -a "name=ntp state=present"
+  797  ansible 'env'  -m apt -a "name=ntp state=present" -s
+  798  ansible 'env'  -m apt -a "name=ntp state=absent" -s
+  799  ansible env -m ping
+  800  cd /etc/ansible/
+  801  ls
+  802  cat ansible.cfg 
+  803  cd -
+  804  ls
+  805  vim ansible.cfg 
+  806  ansible 'env'  -m apt -a "name=ntp state=absent"
+  807  ansible 'env'  -m apt -a "name=ntp state=present"
+  808  cd ..
+  809  cp -rf 02-Ansible-Config 03-PlayBook
+  810  mkdir 03-playbook
+  811  cp -rf 02-Ansible-Config 03-PlayBook
+  812  cp -rf 02-Ansible-Config/ 03-PlayBook
+  813  cp -rf 02-Ansible-Config/ 03-PlayBook/
+  814  cd 02-ansible-cfg/
+  815  cd 02-ansible-cfg/cd ..
+  816  cd ..
+  817  cp -rf 02-Ansible-Config/ 03-PlayBook/
+  818  cp -rf 02-ansible-cfg/ 03-playbook/
+  819  cd 03-playbook/
+  820  ls
+  821  vim playbook.yaml
+  822  ansible-playbook playbook.yaml
+  823  ls
+  824  cp -rf 02-ansible-cfg/ .
+  825  ls
+  826  cp -rf 02-ansible-cfg/hosts .
+  827  cp -rf 02-ansible-cfg/ansible.cfg .
+  828  cd 02-ansible-cfg/
+  829  ls
+  830  cd ..
+  831  ls
+  832  rm -rf 02-ansible-cfg/
+  833  ls
+  834  ansible-playbook playbook.yaml 
+  835  vim playbook.yaml 
+  836  ansible-playbook playbook.yaml 
+  837  vim playbook.yaml 
+  838  ansible-playbook playbook.yaml 
+  839  cat hosts 
+  840  vim hosts 
+  841  vim playbook.yaml 
+  842  ansible-playbook playbook.yaml 
+  843  cd ..
+  844  mkdir 04-playbook-apache
+  845  cp -rf 03-playbook/ 04-playbook-apache/
+  846  cd 04-playbook-apache/
+  847  ls
+  848  cp -rf 03-playbook/hosts .
+  849  cp -rf 03-playbook/ansible.cfg .
+  850  cp -rf 03-playbook/playbook.yaml .
+  851  ls
+  852  rm -rf 03-playbook/
+  853  vim playbook.yaml 
+  854  ansible-playbook playbook.yaml 
+  855  cat playbook.yaml 
+  856  vim playbook.yaml 
+  857  ansible-playbook playbook.yaml 
+  858  cat /var/log/ansible.log 
+  859  ls
+  860  mkdir files
+  861  cd files
+  862  ls
+  863  vim index.html
+  864  cd ..
+  865  ls
+  866  vim playbook.yaml 
+  867  ansible-playbook playbook.yaml 
+  868  docker ps
+  869  docker stop
+  870  docker stop 81395512cfc8
+  871  docker remove 81395512cfc8
+  872  docker kill
+  873  docker kill 81395512cfc8
+  874  docker rm  81395512cfc8
+  875  docker ps
+  876  ansible-playbook playbook.yaml 
+  877  cd .
+  878  cd ..
+  879  cp -rf 04-Playbook-Apache 05-Templates
+  880  mkdir 05-Templates
+  881  cp -rf 04-Playbook-Apache 05-Templates
+  882  cd 04-playbook-apache/
+  883  cd .
+  884  cd ..
+  885  cp -rf 04-playbook-apache 05-Templates
+  886  cd 05-Templates/
+  887  l
+  888  ls
+  889  mkdir templates
+  890  cd 04-playbook-apache/
+  891  ls
+  892  cd ..
+  893  cp -rf 04-playbook-apache/playbook.yaml .
+  894  cp -rf 04-playbook-apache/hosts .
+  895  cp -rf 04-playbook-apache/ansible.cfg .
+  896  ls
+  897  vim playbook.yaml 
+  898  cd templates/
+  899  ls
+  900  vim info.j2
+  901  cd ..
+  902  ansible-playbook playbook.yaml 
+  903  vim playbook.yaml 
+  904  ls
+  905  cp -rf 04-playbook-apache/files/ .
+  906  ls
+  907  cd files/
+  908  ls
+  909  cp -rf 04-playbook-apache/files/ .
+  910  ansible-playbook playbook.yaml 
+  911  ls
+  912  c ..
+  913  cd .
+  914  cd ..
+  915  ansible-playbook playbook.yaml 
+  916  uname -a
+  917  hostname
+  918  ansible 10.0.0.4 -m setup
+  919  ls
+  920  vim hosts 
+  921  vim ansible.cfg 
+  922  vim playbook.yaml 
+  923  ansible-playbook playbook.yaml 
+  924  vim playbook.yaml 
+  925  ansible-playbook playbook.yaml 
+  926  ansible 10.0.0.4 -m setup
+  927  cd templates/
+  928  ls
+  929  vim info.j2 
+  930  ansible-playbook playbook.yaml 
+  931  cd ..
+  932  ansible-playbook playbook.yaml 
+  933  cd ..
+  934  cp -rf 04-Playbook-Apache 05-Templates
+  935  cp -rf 04-playbook-apache/ 05-Templates/
+  936  ls
+  937  cd 05-Templates/
+  938  ls
+  939  cd ..
+  940  ls
+  941  mkdir 06-tomcat
+  942  cp -rf 05-Templates/ 06-tomcat/
+  943  cd 06-tomcat/
+  944  ls
+  945  cd 05-Templates/
+  946  ls
+  947  rm -rf 04-playbook-apache/
+  948  ls
+  949  vim tomcat.yaml
+  950  ls
+  951  cp -rf files/index.html files/jenkins.html
+  952  ls
+  953  cd files
+  954  ls
+  955  vim jenkins.html 
+  956  cd ..
+  957  ansible-playbook tomcat.yaml 
+  958  netstat
+  959  netstat tulncp
+  960  netstat -tulncp
+  961  netstat -tulnp
+  962  cd ..
+  963  ls
+  964  cp -rf 06-tomcat/ 07-roles
+  965  ls
+  966  cd 07-roles/
+  967  ls
+  968  cd 05-Templates/
+  969  ls
+  970  mkdir roles
+  971  cd roles/
+  972  ansible-galaxy init firewall
+  973  ansible-galaxy init webserver
+  974  ls
+  975  teapt-get install tree -y
+  976  apt-get install tree -y
+  977  tree firewall/
+  978  vim firewall/tasks/main.yml 
+  979  vim webserver/tasks/main.yml 
+  980  ls
+  981  cd ..
+  982  cp -rf 06-tomcat/05-Templates/templates/info.j2 07-roles/05-Templates/roles/webserver/templates/
+  983  cp -rf 06-tomcat/05-Templates/files/index.html 07-roles/05-Templates/roles/webserver/files/
+  984  cd -
+  985  ls
+  986  cd 05-Templates/
+  987  ls
+  988  cd roles/
+  989  ls
+  990  cd ..
+  991  ls
+  992  cd ..
+  993  ls
+  994  cd 05-Templates/
+  995  ls
+  996  vim webserver.yaml
+  997  ansible-playbook webserver.yaml 
+  998  vim webserver.yaml 
+  999  ls
+ 1000  ansible-playbook webserver.yaml
+ 1001  vim webserver.yaml 
+ 1002  ansible-playbook webserver.yaml
+ 1003  vim webserver.yaml 
+ 1004  ls
+ 1005  cat hosts 
+ 1006  cd new1/
+ 1007  ls
+ 1008  cd devops-mindtree-25-Nov-2021/
+ 1009  ls
+ 1010  mkdir 07-terraform
+ 1011  cd 07-terraform/
+ 1012  mkdir 00-setup
+ 1013  cd 00-setup/
+ 1014  vim terraform-bootstrap.sh
+ 1015  ls
+ 1016  ls -ltr
+ 1017  chmod =x terraform-bootstrap.sh 
+ 1018  chmod +x terraform-bootstrap.sh 
+ 1019  ./terraform-bootstrap.sh 
+ 1020  cd ..
+ 1021  cd 
+ 1022  pwd
+ 1023  echo "export AWS_ACCESS_KEY_ID="AKIAT2DH7G7FW557ELHS" " >> .bashrc
+ 1024  echo "export AWS_SECRET_ACCESS_KEY="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" " >>  .bashrc
+ 1025  source  .bashrc
+ 1026  set | grep -i AWS
+ 1027  terraform -version
+ 1028  cd -
+ 1029  ls
+ 1030  mkdir 02-first-deployment
+ 1031  cd 02-first-deployment/
+ 1032  vim firstdeployment.tf
+ 1033  terraform plan
+ 1034  terraform init
+ 1035  terraform plan
+ 1036  terraform apply
+ 1037  terraform destroy
+ 1038  ls
+ 1039  cat terraform.tfstate.backup 
+ 1040  ls -a
+ 1041  cd ..
+ 1042  ls
+ 1043  mkdir 03-variabledependency
+ 1044  cd 03-variabledependency/
+ 1045  vim main.tf
+ 1046  terraform fmy
+ 1047  terraform fmt
+ 1048  cat main.tf 
+ 1049  vim main.tf 
+ 1050  terraform show
+ 1051  cat main.tf 
+ 1052  terraform init
+ 1053  vim main.tf 
+ 1054  terraform init
+ 1055  terraform plan
+ 1056  terraform apply -auto-approve
+ 1057  vim main.tf 
+ 1058  terraform show
+ 1059  terraform plan
+ 1060  vim main.tf 
+ 1061  ls
+ 1062  cd ..
+ 1063  cp -rf 02-first-deployment/firstdeployment.tf 03-variabledependency/main.tf 
+ 1064  cd 03-variabledependency/
+ 1065  ls
+ 1066  vim main.tf 
+ 1067  terraform plan
+ 1068  terraform destroy
+ 1069  vim main.tf 
+ 1070  terraform init
+ 1071  terraform fmt
+ 1072  cat main.tf 
+ 1073  vim main.tf 
+ 1074  terraform plan
+ 1075  terraform apply -auto-approve
+ 1076  vim main.tf 
+ 1077  terraform plan
+ 1078  terraform apply -auto-approve
+ 1079  vim main.tf 
+ 1080  terraform plan
+ 1081  terraform apply -auto-approve
+ 1082  terraform destroy -auto-approve
+ 1083  vim main.tf 
+ 1084  terraform plan
+ 1085  terraform apply -auto-approve
+ 1086  vim main.tf 
+ 1087  terraform plan
+ 1088  vim main.tf 
+ 1089  terraform plan
+ 1090  terraform apply -auto-approve
+ 1091  terraform destroy -auto-approve
+ 1092  terraform apply -auto-approve
+ 1093  terraform destroy -auto-approve
+ 1094  ls
+ 1095  ls -ltr
+ 1096  df -h
+ 1097  git add output.txt 
+ 1098  mkdir makendran
+ 1099  cd makendran/
+ 1100  git clone https://github.com/MakendranG/devopscapstone-25-Nov-2021.git
+ 1101  git add mak.txt
+ 1102  ls
+ 1103  cd devopscapstone-25-Nov-2021/
+ 1104  git add mak.txt
+ 1105  vim test.txt
+ 1106  git add test.txt 
+ 1107  git commit
+ 1108  git status
+ 1109  git push
+ 1110  cd ..
+ 1111  cd /new1
+ 1112  ls
+ 1113  cd new1/devops-mindtree-25-Nov-2021/
+ 1114  ls
+ 1115  cd 07-terraform/
+ 1116  ls
+ 1117  mkdir 05-Local-and-Remote-Exec/
+ 1118  cd 05-Local-and-Remote-Exec/
+ 1119  vim resource "aws_instance" "backend" {
+ 1120  vim main.tf
+ 1121  vim output.tf
+ 1122  vim provider.tf
+ 1123  vim terraform.tf
+ 1124  vim variable.tf
+ 1125  vim variable.tf 
+ 1126  vim /root/.ssih/my-key.pem
+ 1127  vim /root/.ssh/my-key.pem
+ 1128  ls
+ 1129  terraform init
+ 1130  terraform plan
+ 1131  terraform apply -auto-approve
+ 1132  docker ps
+ 1133  ls
+ 1134  cat terraform.tf 
+ 1135  cat variable.tf 
+ 1136  ls
+ 1137  cat main.tf 
+ 1138  terraform destroy -auto-approve
+ 1139  vi main.tf 
+ 1140  terraform destroy -auto-approve
+ 1141  ls
+ 1142  cat resource 
+ 1143  rm -rf resource 
+ 1144  ls
+ 1145  df -h
+ 1146  docker images
+ 1147  docker images rm
+ 1148  docker images
+ 1149  docker images rm
+ 1150  docker images
+ 1151  docker images rm *
+ 1152  docker images --help
+ 1153  docker images rm -a
+ 1154  docker images
+ 1155  docker images purge
+ 1156  docker images
+ 1157  df -h
+ 1158  docker image rm
+ 1159  docker image rm -a
+ 1160  docker rmi -f $(docker images -aq)
+ 1161  docker images
+ 1162  df -h
+ 1163  ls
+ 1164  rm -rf jenkins.war
+ 1165  rm -rf jenkins.war.1 
+ 1166  rm -rf makendran/
+ 1167  rm -rf devops
+ 1168  ls
+ 1169  rm -rf dev*
+ 1170  ls
+ 1171  rm -rf new*
+ 1172  ls
+ 1173  ls -ltr
+ 1174  rm -rf terraform_0.12.28_linux_amd64.zip 
+ 1175  ls
+ 1176  cd nw/
+ 1177  ls
+ 1178  rm -rf nw
+ 1179  ls
+ 1180  df -h
+ 1181  cd 
+ 1182  ls
+ 1183  rm -rf nw
+ 1184  ls
+ 1185  cat output.txt 
+ 1186  ls -ltr
+ 1187  rm -rf output.txt 
+ 1188  df -h
+ 1189  git clone https://github.com/MakendranG/Staging-demo.git
+ 1190  ls
+ 1191  cd Staging-demo/
+ 1192  ls
+ 1193  mkdir 01-Jenkins
+ 1194  cd 01-Jenkins/
+ 1195  apt-get install default-jdk -y
+ 1196  java -version
+ 1197  wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war
+ 1198  wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war --no-check-certificate
+ 1199  ls
+ 1200  ls -ltr
+ 1201  mv jenkins.war /root/
+ 1202  nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+ 1203  ls
+ 1204  cd
+ 1205  cd -
+ 1206  cd ..
+ 1207  ls
+ 1208  $> git clone https://github.com/flukeout/snek
+ 1209  cd ..
+ 1210  $> git clone https://github.com/flukeout/snek
+ 1211  cd -
+ 1212  git clone https://github.com/flukeout/snek
+ 1213  ls
+ 1214  cd snek/
+ 1215  ls
+ 1216  npm install
+ 1217  apt install npm
+ 1218  ls
+ 1219  npm start
+ 1220  apt install nodejs
+ 1221  ls
+ 1222  node server/server.js 3000
+ 1223  apt install nodesjs-legacy
+ 1224  node -v
+ 1225  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+ 1226  sudo apt-get install -y nodejs
+ 1227  node -v
+ 1228  npm -v
+ 1229  npm install express-generator -g
+ 1230  npm start
+ 1231  npx express-generator helloworld
+ 1232  npm start
+ 1233  node server/server.js 3000
+ 1234  npm install express
+ 1235  ls
+ 1236  node server/server.js 3000
+ 1237  npm install -g socket.io
+ 1238  node server/server.js 3000
+ 1239  npm install -g socket.io
+ 1240  node server/server.js 3000
+ 1241  sudo npm install socket.io
+ 1242  npm audit fix
+ 1243  node server/server.js 3000
+ 1244  npm start
+ 1245  ls
+ 1246  ls -ltr
+ 1247  cd ..
+ 1248  ls
+ 1249  mv snek/ 02-Snake/
+ 1250  ls
+ 1251  cd 02-Snake/
+ 1252  ls
+ 1253  cd :
+ 1254  cd ..
+ 1255  git commit -m "Application Added"
+ 1256  git add 01-Jenkins/ 02-Snake/
+ 1257  git commit -m "Application Added"
+ 1258  git config --global --edit
+ 1259  ls
+ 1260  cd gi
+ 1261  ls- a
+ 1262  ls -a
+ 1263  cd .git/
+ 1264  ls
+ 1265  cd objects/
+ 1266  ls
+ 1267  cat con
+ 1268  git config --global --list
+ 1269  vim git config --global --list
+ 1270  git status
+ 1271  cd ..
+ 1272  git status
+ 1273  git push
+ 1274  history
+ 1275  ls
+ 1276  history > makendran.txt
