@@ -1,0 +1,1 @@
+nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
