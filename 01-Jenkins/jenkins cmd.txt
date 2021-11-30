@@ -1,1 +1,10 @@
-nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+ 1193  mkdir 01-Jenkins
+ 1194  cd 01-Jenkins/
+ 1195  apt-get install default-jdk -y
+ 1196  java -version
+ 1197  wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war
+ 1198  wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war --no-check-certificate
+ 1199  ls
+ 1200  ls -ltr
+ 1201  mv jenkins.war /root/
+ 1202  nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
